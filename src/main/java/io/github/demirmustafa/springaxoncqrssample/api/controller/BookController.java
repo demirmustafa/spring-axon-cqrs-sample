@@ -1,5 +1,6 @@
 package io.github.demirmustafa.springaxoncqrssample.api.controller;
 
+import io.github.demirmustafa.springaxoncqrssample.api.BookApi;
 import io.github.demirmustafa.springaxoncqrssample.domain.command.AddBookCommand;
 import io.github.demirmustafa.springaxoncqrssample.domain.command.DeleteBookByIdCommand;
 import io.github.demirmustafa.springaxoncqrssample.domain.command.validator.AddBookCommandValidator;
@@ -18,8 +19,8 @@ import reactor.core.publisher.Mono;
 
 import java.util.concurrent.CompletableFuture;
 
+@BookApi
 @RequestMapping("/books")
-@RestController
 @RequiredArgsConstructor
 public class BookController {
 
