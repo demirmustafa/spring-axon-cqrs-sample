@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: axon-cqrs-sample-app
+  couchbase:
+    bucket:
+      name: sample
+      password: sample
+    auto-index: true
+    bootstrap-hosts: http://localhost
+server:
+  port: 7070
